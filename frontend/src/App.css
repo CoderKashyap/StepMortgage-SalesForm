@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(45deg, #ffd700, #ff4500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@layer base {
+  body {
+    font-family: Sora, sans-serif;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+
+}
+
+
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d2d2d2;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b5b5b5;
+  }
+
+
+}

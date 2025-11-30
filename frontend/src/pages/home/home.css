@@ -1,0 +1,9 @@
+.questionStyle {
+    width: 650px;
+}
+
+@media (max-width: 768px) {
+    .questionStyle {
+        width: auto;
+    }
+}

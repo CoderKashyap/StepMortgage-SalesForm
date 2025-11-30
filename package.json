@@ -1,0 +1,36 @@
+{
+  "name": "freedomcapitalapp",
+  "version": "1.0.0",
+  "description": "Freedom capital app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "cd frontend && npm install && npm run build",
+    "server": "concurrently \"npm run dev\" \"npm run client\"",
+    "dev": "nodemon backend/server.js",
+    "client": "cd frontend && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderKashyap/FreedomApplyNow.git"
+  },
+  "author": "Abhishek Kashyap-white Bunnie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderKashyap/FreedomApplyNow/issues"
+  },
+  "homepage": "https://github.com/CoderKashyap/FreedomApplyNow#readme",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "http": "^0.0.1-security",
+    "jsforce": "^3.6.3",
+    "mongoose": "^8.5.1",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.0"
+  }
+}

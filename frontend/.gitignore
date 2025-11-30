@@ -1,0 +1,13 @@
+node_modules
+dist
+
+
+# Environment variables
+.env
+.env.local
+.env.development
+
+
+# Logs & caches
+*.log
+.cache/
