@@ -61,16 +61,19 @@ VITE_API_URL=http://localhost:5000
 ```
 
 
-3. Start servers
 
-### Backend
+3. Start server
+```bash
+Backend
+
 cd backend
 npm start
 
-### Frontend
+Frontend
+
 cd frontend
 npm run dev
-
+```
 
  ## Salesforce Integration
 All form submissions are automatically sent to Salesforce as Leads using the jsforce library.
