@@ -13,13 +13,13 @@ An interactive mortgage application form built with React (Vite) and Node.js/Exp
 
 ## Tech Stack
 
-**Frontend:** React, Vite, JavaScript, CSS
-**Backend:** Node.js, Express.js
-**Integration:** jsforce (Salesforce API)
+- **Frontend:** React, Vite, JavaScript, CSS
+- **Backend:** Node.js, Express.js
+- **Integration:** jsforce (Salesforce API)
 
 
 ## Project Structure
-
+```bash
 root/
 │── backend/
 │   ├── config/
@@ -34,7 +34,7 @@ root/
     ├── src/
     ├── index.html
     └── package.json
-
+```
 
 ## Setup Instructions
 
@@ -46,8 +46,9 @@ cd ../frontend && npm install
 
 3. Configure environment
 
-Create the following:
 ```bash 
+Create the following:
+
 backend/config/config.env
 
 SF_USERNAME=your_username
@@ -62,11 +63,11 @@ VITE_API_URL=http://localhost:5000
 
 3. Start servers
 
-## Backend
+### Backend
 cd backend
 npm start
 
-## Frontend
+### Frontend
 cd frontend
 npm run dev
 
